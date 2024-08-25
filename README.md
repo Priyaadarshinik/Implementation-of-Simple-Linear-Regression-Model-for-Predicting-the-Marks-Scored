@@ -59,6 +59,13 @@ plt.title('Test set(H vs S)')
 plt.xlabel("Hours")
 plt.ylabel("Scores")
 plt.show()
+mse=mean_squared_error(Y_test,Y_pred)
+print('MSE = ',mse)
+mae=mean_absolute_error(Y_test,Y_pred)
+print('MAE = ',mae)
+rmse=np.sqrt(mse)
+print('RMSE = ',rmse)
+
 ```
 ## Output:
 
@@ -71,6 +78,7 @@ plt.show()
 ![output7](https://github.com/user-attachments/assets/1504a836-d40b-4771-8ecb-6c02e1c69a65)
 ![output8](https://github.com/user-attachments/assets/d76cfcd6-3003-41eb-8074-1e5aaf7b2371)
 ![output9](https://github.com/user-attachments/assets/102c34c5-f070-4fd5-bf86-6f3d50850d78)
+![output10](https://github.com/user-attachments/assets/b0e5721d-be97-464e-821e-858fbf91ea35)
 
 ## Result:
 Thus the program to implement the simple linear regression model for predicting the marks scored is written and verified using python programming.
